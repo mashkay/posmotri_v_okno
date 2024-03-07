@@ -182,7 +182,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: block;
+  display: flex;
   cursor: pointer;
   border: var(--border);
   background-color: transparent;
@@ -190,13 +190,11 @@ ol {
   height: 19px;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
-.search-form__checkbox:active + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
   margin: 1px;
   background-color: #fff;
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
+  width: 100%;
   content: "";
 }
 
